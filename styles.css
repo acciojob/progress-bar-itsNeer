@@ -1,1 +1,47 @@
 /*  your css code here. If applicable */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    color: aliceblue;
+    background-color: grey;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.circle.active {
+    transform: scale(1.2);
+    background-color: #3B5998;
+}
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: grey;
+}
+.line.active {
+    background-color: #3B5998;
+
+}
+
+#next, #prev {
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #3B5998;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
